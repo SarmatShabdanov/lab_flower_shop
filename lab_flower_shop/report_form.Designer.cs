@@ -1,6 +1,6 @@
 ﻿namespace lab_flower_shop
 {
-    partial class admin_mainPage_form
+    partial class report_form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_mainPage_form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(report_form));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goToUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paymentsStatisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,13 +44,17 @@
             this.salesByDistrictToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesByActivityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesByEventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.outstandingDeliveriesToSuppliersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.suppliersAccountsPayableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderEditingFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderCancellationFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formOfPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelledOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderContentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.breakevenPointOfProductSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesByPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profitabilityOfGoodsBySupplyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.outstandingDeliveriesToSuppliersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suppliersAccountsPayableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supplyEditingFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listOfWarehousesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listOfProductsInStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,11 +65,9 @@
             this.discountsAndPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оплатаПоставокToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesPriceListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.breakevenPointOfProductSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesByPromotionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.profitabilityOfGoodsBySupplyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.breakevenPointOfProductSalesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.profitabilityOfGoodsBySupplyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.paymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.warehouseTurnoverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.turnoverByBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productTurnoverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,14 +94,21 @@
             this.employeeSalariesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incomeStatementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paymentsStatisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rolesListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -117,8 +121,8 @@
             this.paymentsStatisticsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1495, 24);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
@@ -132,9 +136,8 @@
             // goToUserToolStripMenuItem
             // 
             this.goToUserToolStripMenuItem.Name = "goToUserToolStripMenuItem";
-            this.goToUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.goToUserToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.goToUserToolStripMenuItem.Text = "Return to User";
-            this.goToUserToolStripMenuItem.Click += new System.EventHandler(this.goToUserToolStripMenuItem_Click);
             // 
             // statisticsToolStripMenuItem
             // 
@@ -161,92 +164,6 @@
             this.statisticsToolStripMenuItem.Name = "statisticsToolStripMenuItem";
             this.statisticsToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.statisticsToolStripMenuItem.Text = "Sales Manager";
-            // 
-            // addAdminToolStripMenuItem
-            // 
-            this.addAdminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.outstandingDeliveriesToSuppliersToolStripMenuItem,
-            this.suppliersAccountsPayableToolStripMenuItem,
-            this.supplyEditingFormToolStripMenuItem,
-            this.listOfWarehousesToolStripMenuItem,
-            this.listOfProductsInStockToolStripMenuItem,
-            this.listOfDefectiveGoodsUponDeliveryToolStripMenuItem,
-            this.deliveriesOfGoodsToTheWarehouseToolStripMenuItem,
-            this.deliveriesOfGoodsByProductToolStripMenuItem,
-            this.deliveriesOfGoodsBySuppliersToolStripMenuItem,
-            this.discountsAndPromotionsToolStripMenuItem,
-            this.оплатаПоставокToolStripMenuItem,
-            this.salesPriceListToolStripMenuItem,
-            this.breakevenPointOfProductSalesToolStripMenuItem1,
-            this.profitabilityOfGoodsBySupplyToolStripMenuItem1});
-            this.addAdminToolStripMenuItem.Name = "addAdminToolStripMenuItem";
-            this.addAdminToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
-            this.addAdminToolStripMenuItem.Text = "Supplies Manager";
-            // 
-            // paymentsToolStripMenuItem
-            // 
-            this.paymentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.warehouseTurnoverToolStripMenuItem,
-            this.turnoverByBranchToolStripMenuItem,
-            this.productTurnoverToolStripMenuItem,
-            this.turnoverByProductCategoryToolStripMenuItem,
-            this.warehouseSalesToolStripMenuItem,
-            this.salesByProductTypeToolStripMenuItem,
-            this.salesByProductToolStripMenuItem,
-            this.salesByBranchToolStripMenuItem,
-            this.salesByClientToolStripMenuItem,
-            this.theCompositionOfTheOrderToolStripMenuItem,
-            this.cancellationOfOrdersToolStripMenuItem,
-            this.salesByEmployeeToolStripMenuItem,
-            this.salesByPaymentTypeToolStripMenuItem,
-            this.deliveriesByTypeOfGoodsToolStripMenuItem,
-            this.deliveriesByGoodsToolStripMenuItem,
-            this.warehouseDeliveriesToolStripMenuItem,
-            this.deliveriesBySuppliersToolStripMenuItem,
-            this.customerDebtToolStripMenuItem,
-            this.arrearsToSuppliersToolStripMenuItem,
-            this.supplierDebtToolStripMenuItem,
-            this.theProfitabilityOfTheGoodsOnDeliveryToolStripMenuItem,
-            this.theBreakevenPointOfSaleOfTheProductToolStripMenuItem,
-            this.taxesToolStripMenuItem,
-            this.employeeSalariesToolStripMenuItem,
-            this.stockSalesToolStripMenuItem,
-            this.incomeStatementToolStripMenuItem});
-            this.paymentsToolStripMenuItem.Name = "paymentsToolStripMenuItem";
-            this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.paymentsToolStripMenuItem.Text = "Accountant";
-            // 
-            // paymentsStatisticsToolStripMenuItem
-            // 
-            this.paymentsStatisticsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addRoleToolStripMenuItem,
-            this.removeRoleToolStripMenuItem,
-            this.addUserToolStripMenuItem,
-            this.removeUserToolStripMenuItem,
-            this.rolesListToolStripMenuItem,
-            this.usersListToolStripMenuItem});
-            this.paymentsStatisticsToolStripMenuItem.Name = "paymentsStatisticsToolStripMenuItem";
-            this.paymentsStatisticsToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.paymentsStatisticsToolStripMenuItem.Text = "Admin";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(5, 69);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1490, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(675, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "SARMAT SHABDANOV FLOWERS";
             // 
             // pToolStripMenuItem
             // 
@@ -314,18 +231,6 @@
             this.salesByEventsToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
             this.salesByEventsToolStripMenuItem.Text = "Sales by events";
             // 
-            // outstandingDeliveriesToSuppliersToolStripMenuItem
-            // 
-            this.outstandingDeliveriesToSuppliersToolStripMenuItem.Name = "outstandingDeliveriesToSuppliersToolStripMenuItem";
-            this.outstandingDeliveriesToSuppliersToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.outstandingDeliveriesToSuppliersToolStripMenuItem.Text = "Outstanding deliveries to suppliers";
-            // 
-            // suppliersAccountsPayableToolStripMenuItem
-            // 
-            this.suppliersAccountsPayableToolStripMenuItem.Name = "suppliersAccountsPayableToolStripMenuItem";
-            this.suppliersAccountsPayableToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.suppliersAccountsPayableToolStripMenuItem.Text = "Suppliers\' accounts payable";
-            // 
             // orderEditingFormToolStripMenuItem
             // 
             this.orderEditingFormToolStripMenuItem.Name = "orderEditingFormToolStripMenuItem";
@@ -355,6 +260,57 @@
             this.orderContentsToolStripMenuItem.Name = "orderContentsToolStripMenuItem";
             this.orderContentsToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
             this.orderContentsToolStripMenuItem.Text = "Order contents";
+            // 
+            // breakevenPointOfProductSalesToolStripMenuItem
+            // 
+            this.breakevenPointOfProductSalesToolStripMenuItem.Name = "breakevenPointOfProductSalesToolStripMenuItem";
+            this.breakevenPointOfProductSalesToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.breakevenPointOfProductSalesToolStripMenuItem.Text = "Break-even point of product sales";
+            // 
+            // salesByPromotionsToolStripMenuItem
+            // 
+            this.salesByPromotionsToolStripMenuItem.Name = "salesByPromotionsToolStripMenuItem";
+            this.salesByPromotionsToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.salesByPromotionsToolStripMenuItem.Text = "Sales by Promotions";
+            // 
+            // profitabilityOfGoodsBySupplyToolStripMenuItem
+            // 
+            this.profitabilityOfGoodsBySupplyToolStripMenuItem.Name = "profitabilityOfGoodsBySupplyToolStripMenuItem";
+            this.profitabilityOfGoodsBySupplyToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.profitabilityOfGoodsBySupplyToolStripMenuItem.Text = "Profitability of goods by supply";
+            // 
+            // addAdminToolStripMenuItem
+            // 
+            this.addAdminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.outstandingDeliveriesToSuppliersToolStripMenuItem,
+            this.suppliersAccountsPayableToolStripMenuItem,
+            this.supplyEditingFormToolStripMenuItem,
+            this.listOfWarehousesToolStripMenuItem,
+            this.listOfProductsInStockToolStripMenuItem,
+            this.listOfDefectiveGoodsUponDeliveryToolStripMenuItem,
+            this.deliveriesOfGoodsToTheWarehouseToolStripMenuItem,
+            this.deliveriesOfGoodsByProductToolStripMenuItem,
+            this.deliveriesOfGoodsBySuppliersToolStripMenuItem,
+            this.discountsAndPromotionsToolStripMenuItem,
+            this.оплатаПоставокToolStripMenuItem,
+            this.salesPriceListToolStripMenuItem,
+            this.breakevenPointOfProductSalesToolStripMenuItem1,
+            this.profitabilityOfGoodsBySupplyToolStripMenuItem1});
+            this.addAdminToolStripMenuItem.Name = "addAdminToolStripMenuItem";
+            this.addAdminToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
+            this.addAdminToolStripMenuItem.Text = "Supplies Manager";
+            // 
+            // outstandingDeliveriesToSuppliersToolStripMenuItem
+            // 
+            this.outstandingDeliveriesToSuppliersToolStripMenuItem.Name = "outstandingDeliveriesToSuppliersToolStripMenuItem";
+            this.outstandingDeliveriesToSuppliersToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.outstandingDeliveriesToSuppliersToolStripMenuItem.Text = "Outstanding deliveries to suppliers";
+            // 
+            // suppliersAccountsPayableToolStripMenuItem
+            // 
+            this.suppliersAccountsPayableToolStripMenuItem.Name = "suppliersAccountsPayableToolStripMenuItem";
+            this.suppliersAccountsPayableToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.suppliersAccountsPayableToolStripMenuItem.Text = "Suppliers\' accounts payable";
             // 
             // supplyEditingFormToolStripMenuItem
             // 
@@ -416,24 +372,6 @@
             this.salesPriceListToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
             this.salesPriceListToolStripMenuItem.Text = "Sales price list";
             // 
-            // breakevenPointOfProductSalesToolStripMenuItem
-            // 
-            this.breakevenPointOfProductSalesToolStripMenuItem.Name = "breakevenPointOfProductSalesToolStripMenuItem";
-            this.breakevenPointOfProductSalesToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.breakevenPointOfProductSalesToolStripMenuItem.Text = "Break-even point of product sales";
-            // 
-            // salesByPromotionsToolStripMenuItem
-            // 
-            this.salesByPromotionsToolStripMenuItem.Name = "salesByPromotionsToolStripMenuItem";
-            this.salesByPromotionsToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.salesByPromotionsToolStripMenuItem.Text = "Sales by Promotions";
-            // 
-            // profitabilityOfGoodsBySupplyToolStripMenuItem
-            // 
-            this.profitabilityOfGoodsBySupplyToolStripMenuItem.Name = "profitabilityOfGoodsBySupplyToolStripMenuItem";
-            this.profitabilityOfGoodsBySupplyToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.profitabilityOfGoodsBySupplyToolStripMenuItem.Text = "Profitability of goods by supply";
-            // 
             // breakevenPointOfProductSalesToolStripMenuItem1
             // 
             this.breakevenPointOfProductSalesToolStripMenuItem1.Name = "breakevenPointOfProductSalesToolStripMenuItem1";
@@ -445,6 +383,39 @@
             this.profitabilityOfGoodsBySupplyToolStripMenuItem1.Name = "profitabilityOfGoodsBySupplyToolStripMenuItem1";
             this.profitabilityOfGoodsBySupplyToolStripMenuItem1.Size = new System.Drawing.Size(268, 22);
             this.profitabilityOfGoodsBySupplyToolStripMenuItem1.Text = "Profitability of goods by supply";
+            // 
+            // paymentsToolStripMenuItem
+            // 
+            this.paymentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.warehouseTurnoverToolStripMenuItem,
+            this.turnoverByBranchToolStripMenuItem,
+            this.productTurnoverToolStripMenuItem,
+            this.turnoverByProductCategoryToolStripMenuItem,
+            this.warehouseSalesToolStripMenuItem,
+            this.salesByProductTypeToolStripMenuItem,
+            this.salesByProductToolStripMenuItem,
+            this.salesByBranchToolStripMenuItem,
+            this.salesByClientToolStripMenuItem,
+            this.theCompositionOfTheOrderToolStripMenuItem,
+            this.cancellationOfOrdersToolStripMenuItem,
+            this.salesByEmployeeToolStripMenuItem,
+            this.salesByPaymentTypeToolStripMenuItem,
+            this.deliveriesByTypeOfGoodsToolStripMenuItem,
+            this.deliveriesByGoodsToolStripMenuItem,
+            this.warehouseDeliveriesToolStripMenuItem,
+            this.deliveriesBySuppliersToolStripMenuItem,
+            this.customerDebtToolStripMenuItem,
+            this.arrearsToSuppliersToolStripMenuItem,
+            this.supplierDebtToolStripMenuItem,
+            this.theProfitabilityOfTheGoodsOnDeliveryToolStripMenuItem,
+            this.theBreakevenPointOfSaleOfTheProductToolStripMenuItem,
+            this.taxesToolStripMenuItem,
+            this.employeeSalariesToolStripMenuItem,
+            this.stockSalesToolStripMenuItem,
+            this.incomeStatementToolStripMenuItem});
+            this.paymentsToolStripMenuItem.Name = "paymentsToolStripMenuItem";
+            this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.paymentsToolStripMenuItem.Text = "Accountant";
             // 
             // warehouseTurnoverToolStripMenuItem
             // 
@@ -602,57 +573,123 @@
             this.incomeStatementToolStripMenuItem.Size = new System.Drawing.Size(302, 22);
             this.incomeStatementToolStripMenuItem.Text = "Income statement";
             // 
+            // paymentsStatisticsToolStripMenuItem
+            // 
+            this.paymentsStatisticsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addRoleToolStripMenuItem,
+            this.removeRoleToolStripMenuItem,
+            this.addUserToolStripMenuItem,
+            this.removeUserToolStripMenuItem,
+            this.rolesListToolStripMenuItem,
+            this.usersListToolStripMenuItem});
+            this.paymentsStatisticsToolStripMenuItem.Name = "paymentsStatisticsToolStripMenuItem";
+            this.paymentsStatisticsToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.paymentsStatisticsToolStripMenuItem.Text = "Admin";
+            // 
             // addRoleToolStripMenuItem
             // 
             this.addRoleToolStripMenuItem.Name = "addRoleToolStripMenuItem";
-            this.addRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addRoleToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.addRoleToolStripMenuItem.Text = "Add Role";
             // 
             // removeRoleToolStripMenuItem
             // 
             this.removeRoleToolStripMenuItem.Name = "removeRoleToolStripMenuItem";
-            this.removeRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeRoleToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.removeRoleToolStripMenuItem.Text = "Remove Role";
             // 
             // addUserToolStripMenuItem
             // 
             this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
-            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.addUserToolStripMenuItem.Text = "Add User";
             // 
             // removeUserToolStripMenuItem
             // 
             this.removeUserToolStripMenuItem.Name = "removeUserToolStripMenuItem";
-            this.removeUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeUserToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.removeUserToolStripMenuItem.Text = "Remove User";
             // 
             // rolesListToolStripMenuItem
             // 
             this.rolesListToolStripMenuItem.Name = "rolesListToolStripMenuItem";
-            this.rolesListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rolesListToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.rolesListToolStripMenuItem.Text = "Roles List";
             // 
             // usersListToolStripMenuItem
             // 
             this.usersListToolStripMenuItem.Name = "usersListToolStripMenuItem";
-            this.usersListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usersListToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.usersListToolStripMenuItem.Text = "Users List";
             // 
-            // admin_mainPage_form
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(15, 129);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(753, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 155);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(753, 461);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Report Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(720, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Order By";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(675, 86);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(93, 20);
+            this.textBox2.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Find";
+            // 
+            // report_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1495, 637);
+            this.ClientSize = new System.Drawing.Size(800, 628);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "admin_mainPage_form";
+            this.Name = "report_form";
             this.Text = "SARMATS FLOWERS";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,11 +701,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem goToUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statisticsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addAdminToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem paymentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem paymentsStatisticsToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem pToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productsSalesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
@@ -684,10 +716,13 @@
         private System.Windows.Forms.ToolStripMenuItem orderCancellationFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formOfPaymentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cancelledOrdersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem outstandingDeliveriesToSuppliersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem suppliersAccountsPayableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orderContentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem breakevenPointOfProductSalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salesByPromotionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profitabilityOfGoodsBySupplyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addAdminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem outstandingDeliveriesToSuppliersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem suppliersAccountsPayableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supplyEditingFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listOfWarehousesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listOfProductsInStockToolStripMenuItem;
@@ -698,10 +733,9 @@
         private System.Windows.Forms.ToolStripMenuItem discountsAndPromotionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem оплатаПоставокToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salesPriceListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesByPromotionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem profitabilityOfGoodsBySupplyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem breakevenPointOfProductSalesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem profitabilityOfGoodsBySupplyToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem paymentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem warehouseTurnoverToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem turnoverByBranchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productTurnoverToolStripMenuItem;
@@ -728,11 +762,18 @@
         private System.Windows.Forms.ToolStripMenuItem employeeSalariesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stockSalesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem incomeStatementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem paymentsStatisticsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addRoleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeRoleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rolesListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usersListToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
     }
 }

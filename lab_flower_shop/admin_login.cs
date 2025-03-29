@@ -21,5 +21,29 @@ namespace lab_flower_shop
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            admin_mainPage_form Admin = new admin_mainPage_form();
+            this.Hide();
+
+            Admin.StartPosition = FormStartPosition.Manual;
+            Admin.Location = this.Location;
+
+            Admin.ShowDialog();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            this.Hide();
+
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = this.Location;
+
+            form1.ShowDialog();
+            this.Close();
+        }
     }
 }
