@@ -41,6 +41,7 @@ namespace lab_flower_shop
             support_Form.Location = this.Location;
 
             support_Form.ShowDialog();
+            this.Close();
         }
 
         private void goHomeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace lab_flower_shop
             HomeForm.Location = this.Location;
 
             HomeForm.ShowDialog();
+            this.Close();
         }
 
         private void logInToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,6 +67,7 @@ namespace lab_flower_shop
             logInForm.Location = this.Location;
 
             logInForm.ShowDialog();
+            this.Close();
         }
 
         private void signInToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +79,7 @@ namespace lab_flower_shop
             registration_Form.Location = this.Location;
 
             registration_Form.ShowDialog();
+            this.Close();
         }
 
         private void profileToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -86,6 +90,7 @@ namespace lab_flower_shop
             profile_Form.StartPosition = FormStartPosition.Manual;
             profile_Form.Location = this.Location;
             profile_Form.ShowDialog();
+            this.Close();
         }
 
         private void productsInCartToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,6 +102,7 @@ namespace lab_flower_shop
             cart_Form.Location = this.Location;
 
             cart_Form.ShowDialog();
+            this.Close();
         }
 
         private void fastOrderToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,6 +113,7 @@ namespace lab_flower_shop
             buy_Form.StartPosition = FormStartPosition.Manual;
             buy_Form.Location = this.Location;
             buy_Form.ShowDialog();
+            this.Close();
         }
     }
 }

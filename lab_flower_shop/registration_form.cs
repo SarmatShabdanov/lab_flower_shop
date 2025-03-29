@@ -26,6 +26,7 @@ namespace lab_flower_shop
             form1.Location = this.Location;
 
             form1.ShowDialog();
+            this.Close();
         }
     }
 }
