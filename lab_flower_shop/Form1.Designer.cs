@@ -37,14 +37,14 @@
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsInCartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fastOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.label2 = new System.Windows.Forms.Label();
             this.employeePanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.profileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -116,6 +116,13 @@
             this.signInToolStripMenuItem.Text = "Sign In";
             this.signInToolStripMenuItem.Click += new System.EventHandler(this.signInToolStripMenuItem_Click_1);
             // 
+            // profileToolStripMenuItem1
+            // 
+            this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
+            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.profileToolStripMenuItem1.Text = "Profile";
+            this.profileToolStripMenuItem1.Click += new System.EventHandler(this.profileToolStripMenuItem1_Click);
+            // 
             // cartToolStripMenuItem
             // 
             this.cartToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -129,7 +136,7 @@
             // productsInCartToolStripMenuItem
             // 
             this.productsInCartToolStripMenuItem.Name = "productsInCartToolStripMenuItem";
-            this.productsInCartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productsInCartToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.productsInCartToolStripMenuItem.Text = "Products In Cart";
             this.productsInCartToolStripMenuItem.Click += new System.EventHandler(this.productsInCartToolStripMenuItem_Click_1);
             // 
@@ -138,6 +145,7 @@
             this.fastOrderToolStripMenuItem.Name = "fastOrderToolStripMenuItem";
             this.fastOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fastOrderToolStripMenuItem.Text = "Fast Order";
+            this.fastOrderToolStripMenuItem.Click += new System.EventHandler(this.fastOrderToolStripMenuItem_Click_1);
             // 
             // menuStrip1
             // 
@@ -152,16 +160,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(391, 205);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(539, 351);
-            this.label2.TabIndex = 3;
-            this.label2.Text = resources.GetString("label2.Text");
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // employeePanelToolStripMenuItem
             // 
             this.employeePanelToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -173,14 +171,18 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.adminToolStripMenuItem.Text = "Admin";
             // 
-            // profileToolStripMenuItem1
+            // label2
             // 
-            this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
-            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.profileToolStripMenuItem1.Text = "Profile";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(391, 205);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(539, 351);
+            this.label2.TabIndex = 3;
+            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 

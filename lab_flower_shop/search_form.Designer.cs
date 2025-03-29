@@ -38,6 +38,7 @@
             this.signInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsInCartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -86,7 +87,7 @@
             this.Search = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.fastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -134,7 +135,7 @@
             // goHomeToolStripMenuItem
             // 
             this.goHomeToolStripMenuItem.Name = "goHomeToolStripMenuItem";
-            this.goHomeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.goHomeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.goHomeToolStripMenuItem.Text = "Go Home";
             this.goHomeToolStripMenuItem.Click += new System.EventHandler(this.goHomeToolStripMenuItem_Click);
             // 
@@ -142,7 +143,8 @@
             // 
             this.profileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logInToolStripMenuItem,
-            this.signInToolStripMenuItem});
+            this.signInToolStripMenuItem,
+            this.profileToolStripMenuItem1});
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
             this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.profileToolStripMenuItem.Text = "Profile";
@@ -177,6 +179,13 @@
             this.productsInCartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productsInCartToolStripMenuItem.Text = "Products In Cart";
             this.productsInCartToolStripMenuItem.Click += new System.EventHandler(this.productsInCartToolStripMenuItem_Click);
+            // 
+            // fastToolStripMenuItem
+            // 
+            this.fastToolStripMenuItem.Name = "fastToolStripMenuItem";
+            this.fastToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fastToolStripMenuItem.Text = "Fast Order";
+            this.fastToolStripMenuItem.Click += new System.EventHandler(this.fastToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -648,11 +657,12 @@
             this.comboBox1.Text = "Condition";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // fastToolStripMenuItem
+            // profileToolStripMenuItem1
             // 
-            this.fastToolStripMenuItem.Name = "fastToolStripMenuItem";
-            this.fastToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fastToolStripMenuItem.Text = "Fast Order";
+            this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
+            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.profileToolStripMenuItem1.Text = "Profile";
+            this.profileToolStripMenuItem1.Click += new System.EventHandler(this.profileToolStripMenuItem1_Click);
             // 
             // search_form
             // 
@@ -755,5 +765,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ToolStripMenuItem fastToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem1;
     }
 }

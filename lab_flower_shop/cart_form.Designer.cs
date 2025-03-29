@@ -37,6 +37,7 @@
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fastOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,7 +71,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.profileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -108,21 +108,21 @@
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // supportToolStripMenuItem
             // 
             this.supportToolStripMenuItem.Name = "supportToolStripMenuItem";
-            this.supportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.supportToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.supportToolStripMenuItem.Text = "Support";
             this.supportToolStripMenuItem.Click += new System.EventHandler(this.supportToolStripMenuItem_Click);
             // 
             // goHomeToolStripMenuItem
             // 
             this.goHomeToolStripMenuItem.Name = "goHomeToolStripMenuItem";
-            this.goHomeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.goHomeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.goHomeToolStripMenuItem.Text = "Go Home";
             this.goHomeToolStripMenuItem.Click += new System.EventHandler(this.goHomeToolStripMenuItem_Click);
             // 
@@ -139,16 +139,23 @@
             // logInToolStripMenuItem
             // 
             this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
-            this.logInToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logInToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.logInToolStripMenuItem.Text = "Log In";
             this.logInToolStripMenuItem.Click += new System.EventHandler(this.logInToolStripMenuItem_Click);
             // 
             // signInToolStripMenuItem
             // 
             this.signInToolStripMenuItem.Name = "signInToolStripMenuItem";
-            this.signInToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.signInToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.signInToolStripMenuItem.Text = "Sign In";
             this.signInToolStripMenuItem.Click += new System.EventHandler(this.signInToolStripMenuItem_Click);
+            // 
+            // profileToolStripMenuItem1
+            // 
+            this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
+            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.profileToolStripMenuItem1.Text = "Profile";
+            this.profileToolStripMenuItem1.Click += new System.EventHandler(this.profileToolStripMenuItem1_Click);
             // 
             // cartToolStripMenuItem
             // 
@@ -161,8 +168,9 @@
             // fastOrderToolStripMenuItem
             // 
             this.fastOrderToolStripMenuItem.Name = "fastOrderToolStripMenuItem";
-            this.fastOrderToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.fastOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fastOrderToolStripMenuItem.Text = "Fast Order";
+            this.fastOrderToolStripMenuItem.Click += new System.EventHandler(this.fastOrderToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -466,12 +474,6 @@
             this.label14.TabIndex = 8;
             this.label14.Text = "Cart";
             this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
-            // profileToolStripMenuItem1
-            // 
-            this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
-            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.profileToolStripMenuItem1.Text = "Profile";
             // 
             // cart_form
             // 

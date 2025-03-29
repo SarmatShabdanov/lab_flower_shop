@@ -55,6 +55,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(257, 20);
             this.textBox2.TabIndex = 14;
+            this.textBox2.Text = "Password";
             // 
             // textBox1
             // 
@@ -62,6 +63,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(257, 20);
             this.textBox1.TabIndex = 13;
+            this.textBox1.Text = "Email";
             // 
             // label2
             // 
@@ -97,6 +99,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(257, 20);
             this.textBox3.TabIndex = 16;
+            this.textBox3.Text = "Confirm Password";
             // 
             // button1
             // 

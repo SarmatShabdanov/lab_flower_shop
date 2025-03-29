@@ -19,7 +19,12 @@ namespace lab_flower_shop
 
         private void fastOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            buy_form buy_Form = new buy_form();
+            this.Hide();
 
+            buy_Form.StartPosition = FormStartPosition.Manual;
+            buy_Form.Location = this.Location;
+            buy_Form.ShowDialog();
         }
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +81,16 @@ namespace lab_flower_shop
             registration_Form.Location = this.Location;
 
             registration_Form.ShowDialog();
+        }
+
+        private void profileToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            profile_form profile_Form = new profile_form();
+            this.Hide();
+
+            profile_Form.StartPosition = FormStartPosition.Manual;
+            profile_Form.Location = this.Location;
+            profile_Form.ShowDialog();
         }
     }
 }

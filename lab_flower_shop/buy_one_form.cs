@@ -10,45 +10,26 @@ using System.Windows.Forms;
 
 namespace lab_flower_shop
 {
-    public partial class cart_form : Form
+    public partial class buy_one_form : Form
     {
-        public cart_form()
+        public buy_one_form()
         {
             InitializeComponent();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label14_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            search_form search_form = new search_form();
-            this.Hide();
 
-            search_form.StartPosition = FormStartPosition.Manual;
-            search_form.Location = this.Location;
-
-            search_form.ShowDialog();
-            
-        }
-
-        private void goHomeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form1 Home = new Form1();
-            this.Hide();
-
-            Home.StartPosition = FormStartPosition.Manual;
-            Home.Location = this.Location;
-
-            Home.ShowDialog();
-            
         }
 
         private void supportToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,6 +41,18 @@ namespace lab_flower_shop
             support_Form.Location = this.Location;
 
             support_Form.ShowDialog();
+        }
+
+        private void goHomeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 HomeForm = new Form1();
+            this.Hide();
+
+
+            HomeForm.StartPosition = FormStartPosition.Manual;
+            HomeForm.Location = this.Location;
+
+            HomeForm.ShowDialog();
         }
 
         private void logInToolStripMenuItem_Click(object sender, EventArgs e)
@@ -85,16 +78,6 @@ namespace lab_flower_shop
             registration_Form.ShowDialog();
         }
 
-        private void fastOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            buy_form buy_Form = new buy_form();
-            this.Hide();
-
-            buy_Form.StartPosition = FormStartPosition.Manual;
-            buy_Form.Location = this.Location;
-            buy_Form.ShowDialog();
-        }
-
         private void profileToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             profile_form profile_Form = new profile_form();
@@ -103,6 +86,27 @@ namespace lab_flower_shop
             profile_Form.StartPosition = FormStartPosition.Manual;
             profile_Form.Location = this.Location;
             profile_Form.ShowDialog();
+        }
+
+        private void productsInCartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cart_form cart_Form = new cart_form();
+            this.Hide();
+
+            cart_Form.StartPosition = FormStartPosition.Manual;
+            cart_Form.Location = this.Location;
+
+            cart_Form.ShowDialog();
+        }
+
+        private void fastOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            buy_form buy_Form = new buy_form();
+            this.Hide();
+
+            buy_Form.StartPosition = FormStartPosition.Manual;
+            buy_Form.Location = this.Location;
+            buy_Form.ShowDialog();
         }
     }
 }

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buy_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy_form.Designer.cs">
+      <DependentUpon>buy_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buy_one_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy_one_form.Designer.cs">
+      <DependentUpon>buy_one_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="cart_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="login_form2.Designer.cs">
       <DependentUpon>login_form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile_form.Designer.cs">
+      <DependentUpon>profile_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +102,12 @@
     <Compile Include="support_form.Designer.cs">
       <DependentUpon>support_form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="buy_form.resx">
+      <DependentUpon>buy_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buy_one_form.resx">
+      <DependentUpon>buy_one_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cart_form.resx">
       <DependentUpon>cart_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login_form2.resx">
       <DependentUpon>login_form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile_form.resx">
+      <DependentUpon>profile_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

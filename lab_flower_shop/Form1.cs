@@ -156,5 +156,25 @@ namespace lab_flower_shop
 
             registration_Form.ShowDialog();
         }
+
+        private void profileToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            profile_form profile_Form = new profile_form();
+            this.Hide();
+
+            profile_Form.StartPosition = FormStartPosition.Manual;
+            profile_Form.Location = this.Location;
+            profile_Form.ShowDialog();
+        }
+
+        private void fastOrderToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            buy_form buy_Form = new buy_form();
+            this.Hide();
+
+            buy_Form.StartPosition = FormStartPosition.Manual;
+            buy_Form.Location = this.Location;
+            buy_Form.ShowDialog();
+        }
     }
 }
